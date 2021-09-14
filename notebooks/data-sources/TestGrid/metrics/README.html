@@ -92,10 +92,37 @@
 </ul>
 <p class="caption">
  <span class="caption-text">
+  Getting started
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../docs/get-started.html">
+   Get Started
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../docs/how-to-contribute.html">
+   Contribute to the AI for Continuous Integration Project
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../docs/content.html">
+   Table of Contents
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
   Failure type classifier
  </span>
 </p>
 <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../failure-type-classification/README.html">
+   Failure type classification with the TestGrid data
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../../failure-type-classification/testgrid_flakiness_detection.html">
    Flake Detection for TestGrid
@@ -118,6 +145,11 @@
  </span>
 </p>
 <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../time-to-merge-prediction/README.html">
+   Time to Merge Prediction
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../../time-to-merge-prediction/time_to_merge_model.html">
    Predicting Time to Merge of a Pull Request
@@ -143,6 +175,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../../gcsweb-ci/build-logs/build_log_term_freq.html">
    Term frequency analysis of build logs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../gcsweb-ci/build-logs/model_seldon.html">
+   Seldon deployment for build log clustering
   </a>
  </li>
  <li class="toctree-l1">
@@ -237,7 +274,39 @@
      Time to Fail
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="validate_pipeline.html">
+     Validate the succesful running of the Automated Pipeline
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="get_raw_data.html">
+     Fetch test grid data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="metric_template.html">
+     {Metric name}
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="metric_visualization_generic.html">
+     KPI Metrics Visualization
+    </a>
+   </li>
   </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Bugzilla Data
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Bugzilla/bugzilla_EDA.html">
+   Bugzilla Data for CI Tests on Testgrid
+  </a>
  </li>
 </ul>
 <p class="caption">
@@ -261,6 +330,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../../Sippy/stage/sippy_EDA.html">
    Sippy Export of OpenShift Data - EDA
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Sippy/stage/sippy-analysis.html">
+   SIPPY
   </a>
  </li>
  <li class="toctree-l1">
@@ -337,11 +411,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/sandiego-rh/sandiego"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/aicoe-aiops/ocp-ci-analysis"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/sandiego-rh/sandiego/issues/new?title=Issue%20on%20page%20%2Fnotebooks/data-sources/TestGrid/metrics/README.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/aicoe-aiops/ocp-ci-analysis/issues/new?title=Issue%20on%20page%20%2Fnotebooks/data-sources/TestGrid/metrics/README.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -387,7 +461,7 @@
 <h1>KPI Metrics<a class="headerlink" href="#kpi-metrics" title="Permalink to this headline">¶</a></h1>
 <p>In order to measure the effectiveness and quality of our CI testing process, we need to establish the relevant key performance indicators, or KPIs. These KPIs can not only help us evaluate any AI-based enhancements we make to the CI processes, but also pinpoint what specific areas need the most improvement and therefore should be devoted resources to. The notebooks contained in this directory define, calculate, and save several KPIs that we believe are relevant to various personas (developer, manager, etc.) involved in the CI process.</p>
 <p>These notebooks are also available for viewing and running on the public <a class="reference external" href="https://jupyterhub-opf-jupyterhub.apps.zero.massopen.cloud/hub/login">JupyterHub instance</a> provided via the Operate First initiative.</p>
-<p>When addressing a KPI request, please make sure to follow the <span class="xref myst">Metric-template.ipynb</span> that defines a template for calculating metrics using <a class="reference internal" href="number_of_flakes.html"><span class="doc std std-doc">number-of-flakes.ipynb</span></a> as an example.</p>
+<p>When addressing a KPI request, please make sure to follow the <a class="reference internal" href="metric_template.html"><span class="doc std std-doc">Metric-template.ipynb</span></a> that defines a template for calculating metrics using <a class="reference internal" href="number_of_flakes.html"><span class="doc std std-doc">number-of-flakes.ipynb</span></a> as an example.</p>
 <p>The following section describes what each of these KPIs represent, and links to the notebooks that calculate these.</p>
 <div class="section" id="list-of-available-metrics">
 <h2>List of Available Metrics<a class="headerlink" href="#list-of-available-metrics" title="Permalink to this headline">¶</a></h2>

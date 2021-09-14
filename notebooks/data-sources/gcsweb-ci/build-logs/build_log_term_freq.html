@@ -56,7 +56,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
-    <link rel="next" title="Prow Logs and GCS Data" href="../prow_archive_discovery.html" />
+    <link rel="next" title="Seldon deployment for build log clustering" href="model_seldon.html" />
     <link rel="prev" title="openshift-ci: build logs initial data collection and EDA" href="build_log_EDA.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -94,10 +94,37 @@
 </ul>
 <p class="caption">
  <span class="caption-text">
+  Getting started
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../docs/get-started.html">
+   Get Started
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../docs/how-to-contribute.html">
+   Contribute to the AI for Continuous Integration Project
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../docs/content.html">
+   Table of Contents
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
   Failure type classifier
  </span>
 </p>
 <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../failure-type-classification/README.html">
+   Failure type classification with the TestGrid data
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../../failure-type-classification/testgrid_flakiness_detection.html">
    Flake Detection for TestGrid
@@ -120,6 +147,11 @@
  </span>
 </p>
 <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../time-to-merge-prediction/README.html">
+   Time to Merge Prediction
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../../time-to-merge-prediction/time_to_merge_model.html">
    Predicting Time to Merge of a Pull Request
@@ -145,6 +177,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Term frequency analysis of build logs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="model_seldon.html">
+   Seldon deployment for build log clustering
   </a>
  </li>
  <li class="toctree-l1">
@@ -239,7 +276,39 @@
      Time to Fail
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../TestGrid/metrics/validate_pipeline.html">
+     Validate the succesful running of the Automated Pipeline
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../TestGrid/metrics/get_raw_data.html">
+     Fetch test grid data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../TestGrid/metrics/metric_template.html">
+     {Metric name}
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../TestGrid/metrics/metric_visualization_generic.html">
+     KPI Metrics Visualization
+    </a>
+   </li>
   </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Bugzilla Data
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Bugzilla/bugzilla_EDA.html">
+   Bugzilla Data for CI Tests on Testgrid
+  </a>
  </li>
 </ul>
 <p class="caption">
@@ -263,6 +332,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../../Sippy/stage/sippy_EDA.html">
    Sippy Export of OpenShift Data - EDA
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Sippy/stage/sippy-analysis.html">
+   SIPPY
   </a>
  </li>
  <li class="toctree-l1">
@@ -339,11 +413,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/sandiego-rh/sandiego"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/aicoe-aiops/ocp-ci-analysis"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/sandiego-rh/sandiego/issues/new?title=Issue%20on%20page%20%2Fnotebooks/data-sources/gcsweb-ci/build-logs/build_log_term_freq.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/aicoe-aiops/ocp-ci-analysis/issues/new?title=Issue%20on%20page%20%2Fnotebooks/data-sources/gcsweb-ci/build-logs/build_log_term_freq.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -364,14 +438,14 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/sandiego-rh/sandiego/master?urlpath=lab/tree/notebooks/data-sources/gcsweb-ci/build-logs/build_log_term_freq.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/aicoe-aiops/ocp-ci-analysis/master?urlpath=lab/tree/notebooks/data-sources/gcsweb-ci/build-logs/build_log_term_freq.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../../../../_static/images/logo_binder.svg"
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://jupyterhub-opf-jupyterhub.apps.zero.massopen.cloud/hub/user-redirect/git-pull?repo=https://github.com/sandiego-rh/sandiego&urlpath=lab/tree/sandiego/notebooks/data-sources/gcsweb-ci/build-logs/build_log_term_freq.ipynb&branch=master"><button type="button"
+        <a class="jupyterhub-button" href="https://jupyterhub-opf-jupyterhub.apps.zero.massopen.cloud/hub/user-redirect/git-pull?repo=https://github.com/aicoe-aiops/ocp-ci-analysis&urlpath=lab/tree/ocp-ci-analysis/notebooks/data-sources/gcsweb-ci/build-logs/build_log_term_freq.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../../_static/images/logo_jupyterhub.svg"
@@ -1723,10 +1797,10 @@ Cluster 4: error level msg info failed the to is step
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="../prow_archive_discovery.html" title="next page">
+        <a class="right-next" href="model_seldon.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Prow Logs and GCS Data</p>
+                <p class="prevnext-title">Seldon deployment for build log clustering</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>

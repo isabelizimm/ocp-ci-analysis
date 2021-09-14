@@ -92,10 +92,37 @@
 </ul>
 <p class="caption">
  <span class="caption-text">
+  Getting started
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../docs/get-started.html">
+   Get Started
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../docs/how-to-contribute.html">
+   Contribute to the AI for Continuous Integration Project
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../docs/content.html">
+   Table of Contents
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
   Failure type classifier
  </span>
 </p>
 <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../failure-type-classification/README.html">
+   Failure type classification with the TestGrid data
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../failure-type-classification/testgrid_flakiness_detection.html">
    Flake Detection for TestGrid
@@ -118,6 +145,11 @@
  </span>
 </p>
 <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../time-to-merge-prediction/README.html">
+   Time to Merge Prediction
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../time-to-merge-prediction/time_to_merge_model.html">
    Predicting Time to Merge of a Pull Request
@@ -143,6 +175,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../gcsweb-ci/build-logs/build_log_term_freq.html">
    Term frequency analysis of build logs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../gcsweb-ci/build-logs/model_seldon.html">
+   Seldon deployment for build log clustering
   </a>
  </li>
  <li class="toctree-l1">
@@ -237,7 +274,39 @@
      Time to Fail
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="metrics/validate_pipeline.html">
+     Validate the succesful running of the Automated Pipeline
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="metrics/get_raw_data.html">
+     Fetch test grid data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="metrics/metric_template.html">
+     {Metric name}
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="metrics/metric_visualization_generic.html">
+     KPI Metrics Visualization
+    </a>
+   </li>
   </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Bugzilla Data
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Bugzilla/bugzilla_EDA.html">
+   Bugzilla Data for CI Tests on Testgrid
+  </a>
  </li>
 </ul>
 <p class="caption">
@@ -261,6 +330,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../Sippy/stage/sippy_EDA.html">
    Sippy Export of OpenShift Data - EDA
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Sippy/stage/sippy-analysis.html">
+   SIPPY
   </a>
  </li>
  <li class="toctree-l1">
@@ -337,11 +411,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/sandiego-rh/sandiego"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/aicoe-aiops/ocp-ci-analysis"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/sandiego-rh/sandiego/issues/new?title=Issue%20on%20page%20%2Fnotebooks/data-sources/TestGrid/testgrid_EDA.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/aicoe-aiops/ocp-ci-analysis/issues/new?title=Issue%20on%20page%20%2Fnotebooks/data-sources/TestGrid/testgrid_EDA.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -362,14 +436,14 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/sandiego-rh/sandiego/master?urlpath=lab/tree/notebooks/data-sources/TestGrid/testgrid_EDA.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/aicoe-aiops/ocp-ci-analysis/master?urlpath=lab/tree/notebooks/data-sources/TestGrid/testgrid_EDA.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../../../_static/images/logo_binder.svg"
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://jupyterhub-opf-jupyterhub.apps.zero.massopen.cloud/hub/user-redirect/git-pull?repo=https://github.com/sandiego-rh/sandiego&urlpath=lab/tree/sandiego/notebooks/data-sources/TestGrid/testgrid_EDA.ipynb&branch=master"><button type="button"
+        <a class="jupyterhub-button" href="https://jupyterhub-opf-jupyterhub.apps.zero.massopen.cloud/hub/user-redirect/git-pull?repo=https://github.com/aicoe-aiops/ocp-ci-analysis&urlpath=lab/tree/ocp-ci-analysis/notebooks/data-sources/TestGrid/testgrid_EDA.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
