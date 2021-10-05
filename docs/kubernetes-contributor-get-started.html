@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>project-template documentation! &#8212; AI Supported Continuous Integration</title>
+    <title>Get Involved as a Kubernetes Contributor &#8212; AI Supported Continuous Integration</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -73,6 +73,7 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">AI Supported Continuous Integration</h1>
       
     </a>
@@ -84,7 +85,7 @@
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../README.html">
-   AI Supported Continuous Integration
+   AI4CI : AI for Continuous Integration
   </a>
  </li>
 </ul>
@@ -393,9 +394,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/docs/index.rst"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/docs/kubernetes-contributor-get-started.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.rst</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -413,7 +414,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/aicoe-aiops/ocp-ci-analysis/issues/new?title=Issue%20on%20page%20%2Fdocs/index.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/aicoe-aiops/ocp-ci-analysis/issues/new?title=Issue%20on%20page%20%2Fdocs/kubernetes-contributor-get-started.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -439,14 +440,26 @@
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   project-template documentation!
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kubernetes-ci-cd-data-sources">
+   Kubernetes CI/CD Data Sources
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#analyzing-testgrid">
+     Analyzing TestGrid
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#analyzing-prow">
+     Analyzing Prow
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#indices-and-tables">
-   Indices and tables
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interact-with-dashboards">
+   Interact with Dashboards
   </a>
  </li>
 </ul>
@@ -460,26 +473,28 @@
         
               <div>
                 
-  <div class="section" id="project-template-documentation">
-<h1>project-template documentation!<a class="headerlink" href="#project-template-documentation" title="Permalink to this headline">¶</a></h1>
-<p>Contents:</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="commands.html">Commands</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="commands.html#syncing-data-to-s3">Syncing data to S3</a></li>
-</ul>
-</li>
-</ul>
+  <div class="section" id="get-involved-as-a-kubernetes-contributor">
+<h1>Get Involved as a Kubernetes Contributor<a class="headerlink" href="#get-involved-as-a-kubernetes-contributor" title="Permalink to this headline">¶</a></h1>
+<p>If you are a Kubernetes contributor and would like to engage with the AI4CI project, here are a few ways to get started.</p>
+<div class="section" id="kubernetes-ci-cd-data-sources">
+<h2>Kubernetes CI/CD Data Sources<a class="headerlink" href="#kubernetes-ci-cd-data-sources" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="analyzing-testgrid">
+<h3>Analyzing TestGrid<a class="headerlink" href="#analyzing-testgrid" title="Permalink to this headline">¶</a></h3>
+<p>In order to quantify the current state of the CI workflow and identify any gaps within the CI process, we calculate certain key performance indicators and metrics related to the test runs using the data obtained from <a class="reference external" href="https://testgrid.k8s.io/">TestGrid</a>.</p>
+<p>Here is a short <a class="reference external" href="https://youtu.be/4Mlg2qijEgQ">demo</a> on how we extract data from the testgrid UI, calculate metrics from it and display them on dashboards.</p>
+<p>You can find links to various notebooks and videos describing analyses done on Testgrid data <a class="reference external" href="content.md#testgrid">here</a>.</p>
+</div>
+<div class="section" id="analyzing-prow">
+<h3>Analyzing Prow<a class="headerlink" href="#analyzing-prow" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://prow.k8s.io/">Prow</a> logs represent a rich source of information for automated triaging and root cause analysis. But unfortunately, these logs are noisy data types, i.e. two logs of the same kind but from two different sources may be different enough at a character level that traditional comparison methods are insufficient to capture this similarity. To overcome this issue, we perform clustering and term frequency analysis on build logs in order to determine whether the contents of build logs can provide additional insight into job execution.</p>
+<p>Here is a short <a class="reference external" href="https://youtu.be/JjFWFaMfUJA">demo</a> on how to discover and interact with the prow logs data available on GCS/origin-ci-test as well as provide some simple EDA to help folks get started with analyzing this data.</p>
+<p>You can find links to various notebooks and videos describing analyses done on Prow Logs <a class="reference external" href="content.md#prowgcs-artifacts">here</a>.</p>
 </div>
 </div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><p><a class="reference internal" href="../genindex.html"><span class="std std-ref">Index</span></a></p></li>
-<li><p><a class="reference internal" href="../py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
-<li><p><a class="reference internal" href="../search.html"><span class="std std-ref">Search Page</span></a></p></li>
-</ul>
+<div class="section" id="interact-with-dashboards">
+<h2>Interact with Dashboards<a class="headerlink" href="#interact-with-dashboards" title="Permalink to this headline">¶</a></h2>
+<p>As a part of AI4CI, we collect and store data from TestGrid and calculate relevant metrics and key performance indicators (KPIs) and visualize them using dashboards. You can view and interact with the publicly available dashboard <a class="reference external" href="https://superset.apps.devconfus2021.aws.operate-first.cloud/superset/dashboard/ocp-ci-kpi-dashboard/">here</a>.</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -516,7 +531,7 @@
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         

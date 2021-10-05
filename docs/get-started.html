@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -55,7 +55,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Contribute to the AI for Continuous Integration Project" href="how-to-contribute.html" />
-    <link rel="prev" title="AI Supported Continuous Integration" href="../README.html" />
+    <link rel="prev" title="AI4CI : AI for Continuous Integration" href="../README.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -75,6 +75,7 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">AI Supported Continuous Integration</h1>
       
     </a>
@@ -86,7 +87,7 @@
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../README.html">
-   AI Supported Continuous Integration
+   AI4CI : AI for Continuous Integration
   </a>
  </li>
 </ul>
@@ -436,44 +437,6 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#leverage-open-data-sources">
-   Leverage Open Data Sources:
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#try-out-the-notebooks">
-   Try out the Notebooks:
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#interact-with-dashboards">
-   Interact with Dashboards:
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#interact-with-model-endpoints">
-   Interact with Model Endpoints:
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#automate-your-ai-ml-workflows">
-   Automate your AI/ML Workflows:
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#video-playlist">
-   Video Playlist:
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -484,41 +447,13 @@
                 
   <div class="section" id="get-started">
 <h1>Get Started<a class="headerlink" href="#get-started" title="Permalink to this headline">¶</a></h1>
-<p>The aim of the AI for continuous integration project is to build an open AIOps community involved in developing, integrating and operating AI tools for CI by leveraging the open data that has been made available by OpenShift, Kubernetes and others. Check out the <a class="reference internal" href="../README.html"><span class="doc std std-doc">project overview</span></a> for a detailed overview of this project.</p>
-<div class="section" id="leverage-open-data-sources">
-<h2>Leverage Open Data Sources:<a class="headerlink" href="#leverage-open-data-sources" title="Permalink to this headline">¶</a></h2>
-<p>One of the goals of the AI4CI project is to build an open AIOps community centered around open datasets. As a part of this project, we interact with various open source CI data sources and make them available for others to leverage. A detailed overview of our efforts with the various data sources we are working with, along with data collection scripts, and exploratory analyses is available <a class="reference external" href="content.md#data-engineering-metrics-and-kpis-for-ci">here</a>.</p>
-</div>
-<div class="section" id="try-out-the-notebooks">
-<h2>Try out the Notebooks:<a class="headerlink" href="#try-out-the-notebooks" title="Permalink to this headline">¶</a></h2>
-<p>There are interactive and reproducible notebooks for this entire <a class="reference external" href="https://github.com/aicoe-aiops/ocp-ci-analysis">project</a> available for anyone to start using on the public <a class="reference external" href="https://jupyterhub-opf-jupyterhub.apps.zero.massopen.cloud/hub/login">JupyterHub</a> instance on the <a class="reference external" href="https://massopen.cloud/">Massachusetts Open Cloud</a> (MOC) right now!</p>
-<ol class="simple">
-<li><p>To get started, access <a class="reference external" href="https://jupyterhub-opf-jupyterhub.apps.zero.massopen.cloud/">JupyterHub</a>, select log in with <code class="docutils literal notranslate"><span class="pre">moc-sso</span></code> and sign in using your Google Account.</p></li>
-<li><p>After signing in, on the spawner page, please select the <code class="docutils literal notranslate"><span class="pre">ocp-ci-analysis:latest</span></code> image in the JupyterHub Notebook Image section from the dropdown and select a <code class="docutils literal notranslate"><span class="pre">Medium</span></code> container size and hit <code class="docutils literal notranslate"><span class="pre">Start</span></code> to start your server.</p></li>
-<li><p>Once your server has spawned, you should see a directory titled <code class="docutils literal notranslate"><span class="pre">ocp-ci-analysis-&lt;current-timestamp&gt;</span></code>. Browse through, run the various notebooks and start exploring this project.</p></li>
-<li><p>To interact with the S3 bucket and access the stored datasets, make sure you have a <code class="docutils literal notranslate"><span class="pre">.env</span></code> file at the root of your repo. Check <span class="xref myst">.env-example</span> for an example <code class="docutils literal notranslate"><span class="pre">.env</span></code> file and open an <a class="reference external" href="https://github.com/aicoe-aiops/ocp-ci-analysis/issues">issue</a> for access credentials.</p></li>
-</ol>
-<p>You can find more information on the various notebooks and their purpose <a class="reference internal" href="content.html"><span class="doc std std-doc">here</span></a>.</p>
-<p>If you need more help navigating the Operate First environment, we have a few <a class="reference external" href="https://www.youtube.com/playlist?list=PL8VBRDTElCWpneB4dBu4u1kHElZVWfAwW">short videos</a> to help you get started.</p>
-</div>
-<div class="section" id="interact-with-dashboards">
-<h2>Interact with Dashboards:<a class="headerlink" href="#interact-with-dashboards" title="Permalink to this headline">¶</a></h2>
-<p>As a part of AI4CI, we collect the relevant metrics and key performance indicators (KPIs) and visualize them using dashboards. You can view and interact with the publicly available dashboard <a class="reference external" href="https://superset.apps.devconfus2021.aws.operate-first.cloud/superset/dashboard/ocp-ci-kpi-dashboard/">here</a>.</p>
-</div>
-<div class="section" id="interact-with-model-endpoints">
-<h2>Interact with Model Endpoints:<a class="headerlink" href="#interact-with-model-endpoints" title="Permalink to this headline">¶</a></h2>
+<p>The aim of the AI for continuous integration(AI4CI) project is to build an open AIOps community involved in developing, integrating and operating AI tools for CI by leveraging the open data that has been made available by OpenShift, Kubernetes and others. Check out the <a class="reference internal" href="../README.html"><span class="doc std std-doc">project overview</span></a> for a detailed overview of this project.</p>
+<p>Interested in the project and don’t know where to get started? We have compiled some guides that can help.</p>
 <ul class="simple">
-<li><p><strong>Github Time to Merge Model</strong>: We have an interactive endpoint available for a model which can predict the time taken to merge a PR and classifies it into one of a few predefined time ranges. To interact with the model, check out this <a class="reference internal" href="../notebooks/time-to-merge-prediction/model_inference.html"><span class="doc std std-doc">Model Inference Notebook</span></a></p></li>
+<li><p>I am a <a class="reference internal" href="data-science-get-started.html"><span class="doc std std-doc">Data Science Enthusiast</span></a></p></li>
+<li><p>I am a <a class="reference internal" href="developer-get-started.html"><span class="doc std std-doc">Developer</span></a></p></li>
+<li><p>I am a <a class="reference internal" href="kubernetes-contributor-get-started.html"><span class="doc std std-doc">Kubernetes Contributor</span></a></p></li>
 </ul>
-</div>
-<div class="section" id="automate-your-ai-ml-workflows">
-<h2>Automate your AI/ML Workflows:<a class="headerlink" href="#automate-your-ai-ml-workflows" title="Permalink to this headline">¶</a></h2>
-<p>We use Elyra and Kubeflow pipelines to automate the various steps in the project responsible for data collection, metric calculation, ML analysis. To automate your notebook workflows you can follow this <a class="reference internal" href="automating-using-elyra.html"><span class="doc std std-doc">guide</span></a> or <a class="reference external" href="https://youtu.be/bh5WpKq3W7Y">tutorial video</a>.</p>
-</div>
-<div class="section" id="video-playlist">
-<h2>Video Playlist:<a class="headerlink" href="#video-playlist" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://www.youtube.com/playlist?list=PL8VBRDTElCWoGwMhCp04rQFMcIhshv33U">Here</a> is a video playlist for the AI4CI project which goes over different analyses and walks through various notebooks within the project.</p>
-</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -555,7 +490,7 @@
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">AI Supported Continuous Integration</p>
+                <p class="prevnext-title">AI4CI : AI for Continuous Integration</p>
             </div>
         </a>
     </div>
@@ -573,7 +508,7 @@
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         

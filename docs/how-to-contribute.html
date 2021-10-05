@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -75,6 +75,7 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">AI Supported Continuous Integration</h1>
       
     </a>
@@ -86,7 +87,7 @@
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../README.html">
-   AI Supported Continuous Integration
+   AI4CI : AI for Continuous Integration
   </a>
  </li>
 </ul>
@@ -471,7 +472,7 @@
 <ul class="simple">
 <li><p>In order to include an additional KPI, you can open a KPI Request <a class="reference external" href="https://github.com/aicoe-aiops/ocp-ci-analysis/issues?q=is%3Aissue+is%3Aopen+%22KPI+Request%22+">issue</a>. Specify the KPI you wish to collect with the prefix <code class="docutils literal notranslate"><span class="pre">KPI</span> <span class="pre">Request:</span></code>.</p></li>
 <li><p>In order to add a notebook to fulfill one of the existing open <code class="docutils literal notranslate"><span class="pre">KPI</span> <span class="pre">Request:</span></code> issues, you can use the <a class="reference internal" href="../notebooks/data-sources/TestGrid/metrics/metric_template.html"><span class="doc std std-doc">KPI template notebook</span></a>. The template notebook has helper functions and examples to make contributing new metrics as simple and as uniform as possible.</p></li>
-<li><p>When defining the file prefix for your metrics stored in the shared ceph instance, please be sure to use the following format: <code class="docutils literal notranslate"><span class="pre">s3://opf-datacatalog/ai4ci/&lt;dat_source&gt;/metrics/&lt;metric_name&gt;/&lt;date_analysis_was_generated&gt;.parquet</span></code></p></li>
+<li><p>When defining the file prefix for your metrics stored in the shared ceph instance, please be sure to use the following format: <code class="docutils literal notranslate"><span class="pre">s3://&lt;bucket-name&gt;/ai4ci/&lt;data_source&gt;/metrics/&lt;metric_name&gt;/&lt;metric_name&gt;-timestamp_analysis_was_generated&gt;.parquet</span></code></p></li>
 <li><p>Submit a Pull Request to the <a class="reference external" href="https://github.com/aicoe-aiops/ocp-ci-analysis">project repo</a> with your KPI analysis notebook.</p></li>
 <li><p>In order to add the notebook to the automated Kubeflow workflow, follow intructions in the <a class="reference internal" href="automating-using-elyra.html"><span class="doc std std-doc">guide</span></a>.</p></li>
 </ul>
@@ -481,7 +482,7 @@
 <p>With the necessary KPIs available to quantify and evaluate the CI workflow, we can start to apply some AI and machine learning techniques to help improve the CI workflow. We encourage you to contribute to this work developing additional machine learning analyses or adding features to the existing analyses.</p>
 <ul class="simple">
 <li><p>In order to include an additional ML Analysis, you can open an ML Request <a class="reference external" href="https://github.com/aicoe-aiops/ocp-ci-analysis/issues?q=is%3Aissue+is%3Aopen+%22ML+Request%22+">issue</a>. Specify the machine learning application you would like to have included with the prefix <code class="docutils literal notranslate"><span class="pre">ML</span> <span class="pre">Request:</span></code>.</p></li>
-<li><p>When uploading your model to the shared ceph storage instance please use the following prefix format to ensure no files get overwritten: <code class="docutils literal notranslate"><span class="pre">s3://opf-datacatalog/ai4ci/&lt;ML_directory_name&gt;/model/&lt;model_file&gt;</span></code></p></li>
+<li><p>When uploading your model to the shared ceph storage instance please use the following prefix format to ensure no files get overwritten: <code class="docutils literal notranslate"><span class="pre">s3://&lt;bucket-name&gt;/ai4ci/&lt;ML_directory_name&gt;/model/&lt;model_file&gt;</span></code></p></li>
 <li><p>Submit a Pull Request to the <a class="reference external" href="https://github.com/aicoe-aiops/ocp-ci-analysis">project repo</a> with your ML analysis notebook.</p></li>
 <li><p>In order to add the notebook to the automated Kubeflow workflow, follow instructions in the <a class="reference internal" href="automating-using-elyra.html"><span class="doc std std-doc">guide</span></a>.</p></li>
 </ul>
@@ -540,7 +541,7 @@
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         

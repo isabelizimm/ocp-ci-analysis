@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Getting started &#8212; AI Supported Continuous Integration</title>
+    <title>Get Involved as a Developer &#8212; AI Supported Continuous Integration</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -73,6 +73,7 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">AI Supported Continuous Integration</h1>
       
     </a>
@@ -84,7 +85,7 @@
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../README.html">
-   AI Supported Continuous Integration
+   AI4CI : AI for Continuous Integration
   </a>
  </li>
 </ul>
@@ -393,9 +394,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/docs/getting-started.rst"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/docs/developer-get-started.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.rst</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -413,7 +414,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/aicoe-aiops/ocp-ci-analysis/issues/new?title=Issue%20on%20page%20%2Fdocs/getting-started.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/aicoe-aiops/ocp-ci-analysis/issues/new?title=Issue%20on%20page%20%2Fdocs/developer-get-started.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -434,6 +435,34 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ci-cd-data-sources">
+   CI/CD Data Sources
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interact-with-dashboards">
+   Interact with Dashboards
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interact-with-model-endpoints">
+   Interact with Model Endpoints
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#video-playlist">
+   Video Playlist
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -442,11 +471,38 @@
         
               <div>
                 
-  <div class="section" id="getting-started">
-<h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
-<p>This is where you describe how to get set up on a clean install, including the
-commands necessary to get the raw data (using the <cite>sync_data_from_s3</cite> command,
-for example), and then how to make the cleaned, final data sets.</p>
+  <div class="section" id="get-involved-as-a-developer">
+<h1>Get Involved as a Developer<a class="headerlink" href="#get-involved-as-a-developer" title="Permalink to this headline">¶</a></h1>
+<p>If you are a developer and would like to engage with the AI4CI project, here are a few ways to get started and we compile a list of ways you can engage with this project.</p>
+<div class="section" id="ci-cd-data-sources">
+<h2>CI/CD Data Sources<a class="headerlink" href="#ci-cd-data-sources" title="Permalink to this headline">¶</a></h2>
+<p>As part of the AI4CI project, we collect data from various CI/CD data sources and build tools to analyze them and derive meaningful insights from them.</p>
+<p>The applications and CI/CD tools we currently collect data from are as follows:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="content.md#testgrid">TestGrid</a></p></li>
+<li><p><a class="reference external" href="content.md#prowgcs-artifacts">Prow/GCS Artifacts</a></p></li>
+<li><p><a class="reference external" href="content.md#github">Github</a></p></li>
+<li><p><a class="reference external" href="content.md#bugzilla">Bugzilla</a></p></li>
+<li><p><a class="reference external" href="content.md#telemetry">Telemetry</a></p></li>
+</ul>
+</div>
+<div class="section" id="interact-with-dashboards">
+<h2>Interact with Dashboards<a class="headerlink" href="#interact-with-dashboards" title="Permalink to this headline">¶</a></h2>
+<p>As a part of AI4CI, we collect the relevant metrics and key performance indicators (KPIs) from various CI/CD data sources and visualize them using dashboards. You can view and interact with the publicly available dashboard <a class="reference external" href="https://superset.apps.devconfus2021.aws.operate-first.cloud/superset/dashboard/ocp-ci-kpi-dashboard/">here</a>.</p>
+</div>
+<div class="section" id="interact-with-model-endpoints">
+<h2>Interact with Model Endpoints<a class="headerlink" href="#interact-with-model-endpoints" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p><strong>Github Time to Merge Model</strong>: We have an interactive endpoint available for a model which can predict the time taken to merge a PR and classifies it into one of a few predefined time ranges. To interact with the model, check out this <a class="reference internal" href="../notebooks/time-to-merge-prediction/model_inference.html"><span class="doc std std-doc">Model Inference Notebook</span></a></p>
+<p>You can find more information about Github Time to Merge Model <a class="reference internal" href="../notebooks/time-to-merge-prediction/README.html"><span class="doc std std-doc">here</span></a>.</p>
+</li>
+<li><p><strong>Build Log Clustering Model</strong> : We also have an interactive endpoint for a model that uses unsupervised machine learning techniques such as k-means and tf-idf for clustering build logs. To interact with the model, check out this <a class="reference internal" href="../notebooks/data-sources/gcsweb-ci/build-logs/model_seldon.html"><span class="doc std std-doc">Seldon deployment</span></a>.</p></li>
+</ul>
+</div>
+<div class="section" id="video-playlist">
+<h2>Video Playlist<a class="headerlink" href="#video-playlist" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://www.youtube.com/playlist?list=PL8VBRDTElCWoGwMhCp04rQFMcIhshv33U">Here</a> is a video playlist for the AI4CI project which goes over different analyses and walks through various notebooks within the project.</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -483,7 +539,7 @@ for example), and then how to make the cleaned, final data sets.</p>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
